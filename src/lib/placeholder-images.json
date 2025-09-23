@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "main_hero",
+      "description": "A stunning aerial view of a tropical coastline at sunset, with turquoise water and lush green hills.",
+      "imageUrl": "https://images.unsplash.com/photo-1703273839419-ee591f3595bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cm9waWNhbCUyMGNvYXN0fGVufDB8fHx8MTc1ODY1NjM4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tropical coast"
+    },
+    {
+      "id": "paris_hero",
+      "description": "The Eiffel Tower in Paris, France, viewed from a classic Parisian street at dusk.",
+      "imageUrl": "https://images.unsplash.com/photo-1610872025936-808df62b6729?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGFyaXMlMjBlaWZmZWx8ZW58MHx8fHwxNzU4NjU2MzgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paris eiffel"
+    },
+    {
+      "id": "maldives_hero",
+      "description": "An overwater bungalow in the Maldives with a clear turquoise lagoon and a bright blue sky.",
+      "imageUrl": "https://images.unsplash.com/photo-1662792721650-545a15f07ff6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWxkaXZlcyUyMGJ1bmdhbG93fGVufDB8fHx8MTc1ODU5OTAxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "maldives bungalow"
+    },
+    {
+      "id": "confirmation_hero",
+      "description": "A person holding a passport and a boarding pass, with a blurred airport background.",
+      "imageUrl": "https://images.unsplash.com/photo-1657358846130-3305fd8fcd30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx0cmF2ZWwlMjBwYXNzcG9ydHxlbnwwfHx8fDE3NTg2NTYzODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel passport"
+    }
+  ]
 }
