@@ -20,21 +20,36 @@ export async function submitBooking(
 
   const data: BookingFormValues = validatedFields.data;
 
-  // --- Integration Simulation ---
-  // In a real-world application, you would perform the following actions here:
-  
-  // 1. Save to Google Sheets/Excel:
-  // Use the Google Sheets API to append a new row with the form data.
-  // console.log("Simulating: Saving to Google Sheets...", data);
+  // --- Integration with Google Sheets ---
+  const googleScriptUrl = "https://script.google.com/macros/s/AKfycbzlh680A1gkpXw0JEiNLC_HYWtL1igVkS1Px_g_ya9HyJ1qnHhKGdk-WVnk_sNxA4AM/exec";
+  const sheetData = {
+    name: data.name,
+    phoneNumber: data.phone,
+    email: data.email,
+    destination: data.destination,
+    price: 10000,
+    createdBy: data.name,
+    updatedBy: data.name,
+    createdDate: new Date().toISOString(),
+    lastUpdatedDate: new Date().toISOString()
+  };
 
-  // 2. Redirect to Zoho for Payment:
-  // Construct the Zoho/PhonePe payment URL with user details and amount.
-  // This redirect would lead the user to the payment gateway.
-  // After payment, Zoho would redirect back to your /confirmation or /error page.
-  
-  // For this demo, we'll redirect directly to the confirmation page,
-  // passing form data and a simulated payment ID in the URL.
-  
+  try {
+    const response = await fetch(googleScriptUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(sheetData),
+    });
+    const result = await response.json();
+    console.log("Submitted to Google Sheet:", result);
+  } catch (err) {
+    console.error("Google Sheet submission error:", err);
+    // Optionally handle sheet submission error, maybe return an error to the user
+  }
+
+  // --- Redirect to confirmation page ---
   console.log("Form submitted successfully:", data);
 
   const paymentId = `pi_${Date.now()}${Math.random().toString(36).substring(2, 9)}`;
