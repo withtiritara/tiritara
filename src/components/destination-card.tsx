@@ -38,9 +38,9 @@ export function DestinationCard({ destination }: DestinationCardProps) {
         <CardTitle className="text-2xl font-headline font-bold text-white group-hover:text-accent transition-colors">
           {destination.name}
         </CardTitle>
-        <p className="mt-3 text-gray-300 text-sm leading-relaxed">{destination.description}</p>
+        <p className="mt-3 text-darkgray-300 text-sm leading-relaxed">{destination.description}</p>
         {destination.dates && (
-          <Badge variant="secondary" className="mt-4 text-sm font-medium bg-accent/20 text-accent-foreground border-accent/30">
+          <Badge variant="secondary" className="mt-4 text-sm font-medium bg-slate-500/50 text-white border-transparent">
             <CalendarDays className="mr-2 h-4 w-4" />
             {destination.dates}
           </Badge>
