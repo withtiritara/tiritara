@@ -7,16 +7,16 @@
       "imageHint": "tropical coast"
     },
     {
-      "id": "paris_hero",
-      "description": "The Eiffel Tower in Paris, France, viewed from a classic Parisian street at dusk.",
-      "imageUrl": "https://images.unsplash.com/photo-1610872025936-808df62b6729?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGFyaXMlMjBlaWZmZWx8ZW58MHx8fHwxNzU4NjU2MzgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "paris eiffel"
+      "id": "south_goa_hero",
+      "description": "A beautiful beach in South Goa with golden sand, palm trees, and calm turquoise water.",
+      "imageUrl": "https://images.unsplash.com/photo-1595526114035-0d45ed16433d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTc5fDB8MXxzZWFyY2h8MXx8c291dGglMjBnb2ElMjBiZWFjaHxlbnwwfHx8fDE2NzM0MjU3NTE&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "south goa"
     },
     {
-      "id": "maldives_hero",
-      "description": "An overwater bungalow in the Maldives with a clear turquoise lagoon and a bright blue sky.",
-      "imageUrl": "https://images.unsplash.com/photo-1662792721650-545a15f07ff6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYWxkaXZlcyUyMGJ1bmdhbG93fGVufDB8fHx8MTc1ODU5OTAxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "maldives bungalow"
+      "id": "hampi_hero",
+      "description": "The ancient stone chariot temple ruins in Hampi, India, at sunset with a dramatic sky.",
+      "imageUrl": "https://images.unsplash.com/photo-1592329538833-35a16d3a89e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNTc5fDB8MXxzZWFyY2h8MXx8aGFtcGklMjBydWluc3xlbnwwfHx8fDE2NzM0MjU3NTI&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "hampi ruins"
     },
     {
       "id": "confirmation_hero",

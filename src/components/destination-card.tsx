@@ -35,7 +35,7 @@ export function DestinationCard({ destination }: DestinationCardProps) {
         <CardTitle className="text-2xl font-headline font-bold text-white group-hover:text-accent transition-colors">
           {destination.name}
         </CardTitle>
-        <p className="mt-2 text-gray-300">{destination.description}</p>
+        <p className="mt-2 text-darkgray-300">{destination.description}</p>
       </CardContent>
     </Card>
   );

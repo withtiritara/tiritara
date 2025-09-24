@@ -19,13 +19,13 @@ const destinations: Destination[] = [
     id: 'southGoa',
     name: 'South Goa',
     description: 'South Goa is where time slows down and nature whispers in every breeze. Blessed with golden beaches like Palolem, Colva, and Agonda, it offers crystal waters, swaying palms, and breathtaking sunsets. Beyond the coast, travelers discover spice plantations, hidden waterfalls, and charming villages with Portuguese-era churches and colorful houses. Unlike the bustle of North Goa, the south embraces calm — ideal for yoga retreats, dolphin cruises, or simply unwinding by the sea. With warm hospitality, delicious seafood shacks, and unspoiled beauty, South Goa is the perfect destination for those seeking peace, culture, and soulful experiences.',
-    image: PlaceHolderImages.find(img => img.id === 'paris_hero')!,
+    image: PlaceHolderImages.find(img => img.id === 'south_goa_hero')!,
   },
   {
     id: 'hampi',
     name: 'Hampi',
     description: 'Hampi is a UNESCO World Heritage Site that transports travelers to the grandeur of the Vijayanagara Empire. Scattered across a surreal boulder-strewn landscape, its majestic ruins include intricately carved temples, royal enclosures, and the iconic Stone Chariot. The Virupaksha Temple still resonates with devotion, while Matanga Hill rewards trekkers with panoramic sunrise views. Beyond history, Hampi exudes a rustic charm with coracle rides on the Tungabhadra River and vibrant bazaars echoing tales of a glorious past. A perfect blend of spirituality, culture, and adventure, Hampi is a living museum where every stone has a story to tell.',
-    image: PlaceHolderImages.find(img => img.id === 'maldives_hero')!,
+    image: PlaceHolderImages.find(img => img.id === 'hampi_hero')!,
   },
 ];
 
