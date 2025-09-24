@@ -16,15 +16,15 @@ type Destination = {
 
 const destinations: Destination[] = [
   {
-    id: 'paris',
-    name: 'Paris, France',
-    description: 'Discover the city of love, with its iconic landmarks, charming streets, and world-class cuisine. A romantic getaway awaits.',
+    id: 'southGoa',
+    name: 'South Goa',
+    description: 'South Goa is where time slows down and nature whispers in every breeze. Blessed with golden beaches like Palolem, Colva, and Agonda, it offers crystal waters, swaying palms, and breathtaking sunsets. Beyond the coast, travelers discover spice plantations, hidden waterfalls, and charming villages with Portuguese-era churches and colorful houses. Unlike the bustle of North Goa, the south embraces calm — ideal for yoga retreats, dolphin cruises, or simply unwinding by the sea. With warm hospitality, delicious seafood shacks, and unspoiled beauty, South Goa is the perfect destination for those seeking peace, culture, and soulful experiences.',
     image: PlaceHolderImages.find(img => img.id === 'paris_hero')!,
   },
   {
-    id: 'maldives',
-    name: 'The Maldives',
-    description: 'Escape to paradise in the Maldives, where crystal-clear waters, overwater bungalows, and vibrant coral reefs await.',
+    id: 'hampi',
+    name: 'Hampi',
+    description: 'Hampi is a UNESCO World Heritage Site that transports travelers to the grandeur of the Vijayanagara Empire. Scattered across a surreal boulder-strewn landscape, its majestic ruins include intricately carved temples, royal enclosures, and the iconic Stone Chariot. The Virupaksha Temple still resonates with devotion, while Matanga Hill rewards trekkers with panoramic sunrise views. Beyond history, Hampi exudes a rustic charm with coracle rides on the Tungabhadra River and vibrant bazaars echoing tales of a glorious past. A perfect blend of spirituality, culture, and adventure, Hampi is a living museum where every stone has a story to tell.',
     image: PlaceHolderImages.find(img => img.id === 'maldives_hero')!,
   },
 ];
@@ -48,7 +48,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-headline font-bold tracking-tight">
-              Welcome to TravelWise
+              Welcome to Tiri Tara
             </h1>
             <p className="mt-4 max-w-2xl text-lg md:text-xl text-gray-200">
               Your wise choice for dream destinations. Let us plan your next adventure.

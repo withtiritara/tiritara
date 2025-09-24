@@ -1,4 +1,4 @@
-# **App Name**: TravelWise
+# **App Name**: Trir Tara
 
 ## Core Features:
 
