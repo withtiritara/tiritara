@@ -69,7 +69,7 @@ export function BookingForm({ destinations }: BookingFormProps) {
                 <FormItem>
                   <FormLabel>Full Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="John Doe" {...field} />
+                    <Input placeholder = "Batman" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -82,7 +82,7 @@ export function BookingForm({ destinations }: BookingFormProps) {
                 <FormItem>
                   <FormLabel>Email Address</FormLabel>
                   <FormControl>
-                    <Input type="email" placeholder="john.doe@example.com" {...field} />
+                    <Input type="email" placeholder="batman@gmail.com" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -95,7 +95,7 @@ export function BookingForm({ destinations }: BookingFormProps) {
                 <FormItem>
                   <FormLabel>Phone Number</FormLabel>
                   <FormControl>
-                    <Input placeholder="+1234567890" {...field} />
+                    <Input placeholder="+919999999999" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
