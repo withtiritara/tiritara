@@ -9,13 +9,13 @@
     {
       "id": "south_goa_hero",
       "description": "A beautiful beach in South Goa with golden sand, palm trees, and calm turquoise water.",
-      "imageUrl": "https://images.unsplash.com/photo-1695469255346-76917af18474?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzb3V0aCUyMGdvYXxlbnwwfHx8fDE3NTg3MDg4MzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1620994689033-601a4e54a654?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb3V0aCUyMGdvYSUyMGJlYWNofGVufDB8fHx8MTc1ODcwODg5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "south goa"
     },
     {
       "id": "hampi_hero",
       "description": "The ancient stone chariot temple ruins in Hampi, India, at sunset with a dramatic sky.",
-      "imageUrl": "https://images.unsplash.com/photo-1736228077758-fe69dadb0fc1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxoYW1waSUyMHJ1aW5zfGVufDB8fHx8MTc1ODcwODgzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599386380585-78c73859f134?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoYW1waSUyMHRlbXBsZXxlbnwwfHx8fDE3NTg3MDg4OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "hampi ruins"
     },
     {
