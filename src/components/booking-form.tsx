@@ -1,9 +1,8 @@
 "use client";
 
-import { useFormState } from "react-dom";
+import { useActionState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useEffect } from "react";
 import { useToast } from "@/hooks/use-toast";
 
 import { submitBooking } from "@/app/actions";
@@ -32,7 +31,7 @@ interface BookingFormProps {
 }
 
 export function BookingForm({ destinations }: BookingFormProps) {
-  const [state, formAction] = useFormState(submitBooking, {
+  const [state, formAction] = useActionState(submitBooking, {
     message: "",
     errors: {},
   });

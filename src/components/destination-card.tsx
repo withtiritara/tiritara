@@ -31,19 +31,23 @@ export function DestinationCard({ destination }: DestinationCardProps) {
             className="object-cover transition-transform duration-500 group-hover:scale-110"
             data-ai-hint={destination.image.imageHint}
           />
-           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         </div>
       </CardHeader>
       <CardContent className="p-6 relative -mt-16 z-10">
         <CardTitle className="text-2xl font-headline font-bold text-white group-hover:text-accent transition-colors">
           {destination.name}
         </CardTitle>
-        <p className="mt-3 text-gray-300 text-sm leading-relaxed">{destination.description}</p>
+        <p className="mt-3 text-darkgray-300 text-sm leading-relaxed">{destination.description}</p>
         {destination.dates && (
-          <Badge variant="secondary" className="mt-4 text-sm font-medium bg-slate-500/50 text-white border-transparent hover:bg-slate-500/50">
+          <Badge
+            variant="secondary"
+            className="mt-4 text-sm font-medium bg-[lightslategray] text-white border-transparent hover:bg-[lightslategray]"
+          >
             <CalendarDays className="mr-2 h-4 w-4" />
             {destination.dates}
           </Badge>
+
         )}
       </CardContent>
     </Card>
