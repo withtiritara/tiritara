@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CalendarDays } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 type Destination = {
   id: string;
@@ -10,6 +12,7 @@ type Destination = {
     description: string;
     imageHint: string;
   };
+  dates: string;
 };
 
 interface DestinationCardProps {
@@ -35,7 +38,13 @@ export function DestinationCard({ destination }: DestinationCardProps) {
         <CardTitle className="text-2xl font-headline font-bold text-white group-hover:text-accent transition-colors">
           {destination.name}
         </CardTitle>
-        <p className="mt-2 text-darkgray-300">{destination.description}</p>
+        {destination.dates && (
+          <Badge variant="secondary" className="mt-2 text-sm font-medium bg-accent/20 text-accent-foreground border-accent/30">
+            <CalendarDays className="mr-2 h-4 w-4" />
+            {destination.dates}
+          </Badge>
+        )}
+        <p className="mt-3 text-gray-300 text-sm leading-relaxed">{destination.description}</p>
       </CardContent>
     </Card>
   );
