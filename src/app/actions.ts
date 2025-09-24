@@ -20,44 +20,24 @@ export async function submitBooking(
 
   const data: BookingFormValues = validatedFields.data;
 
-  // --- Integration with Google Sheets ---
-  const googleScriptUrl = "https://script.google.com/macros/s/AKfycbzlh680A1gkpXw0JEiNLC_HYWtL1igVkS1Px_g_ya9HyJ1qnHhKGdk-WVnk_sNxA4AM/exec";
-  const sheetData = {
-    name: data.name,
-    phoneNumber: data.phone,
-    email: data.email,
-    destination: data.destination,
-    price: 10000,
-    createdBy: data.name,
-    updatedBy: data.name,
-    createdDate: new Date().toISOString(),
-    lastUpdatedDate: new Date().toISOString()
-  };
-
-  try {
-    const response = await fetch(googleScriptUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(sheetData),
-    });
-    const result = await response.json();
-    console.log("Submitted to Google Sheet:", result);
-  } catch (err) {
-    console.error("Google Sheet submission error:", err);
-    // Optionally handle sheet submission error, maybe return an error to the user
-  }
-
-  // --- Redirect to confirmation page ---
-  console.log("Form submitted successfully:", data);
-
-  const paymentId = `pi_${Date.now()}${Math.random().toString(36).substring(2, 9)}`;
-  const queryString = new URLSearchParams({
-    ...data,
-    paymentId: paymentId,
-    status: "success",
-  }).toString();
+  // --- Redirect to Zoho for payment ---
+  const zohoUrl = "https://zohosecurepay.com/checkout/t3p6cag-w4enp3wgf23e1/Travel-Bookings-and-Tour-Packages";
   
-  redirect(`/confirmation?${queryString}`);
+  const destinationPrices: { [key: string]: number } = {
+    paris: 12000,
+    maldives: 15000,
+  };
+  const price = destinationPrices[data.destination] || 10000;
+
+
+  const queryString = new URLSearchParams({
+    "redirect_url": `https://9000-firebase-studio-1758655134525.cluster-ejd22kqny5htuv5dfowoyipt52.cloudworkstations.dev/confirmation`,
+    "name": data.name,
+    "email": data.email,
+    "phone": data.phone,
+    "destination": data.destination,
+    "amount": price.toString()
+  }).toString();
+
+  redirect(`${zohoUrl}?${queryString}`);
 }
